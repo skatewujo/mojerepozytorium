@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+
+<html>
+
+	<head>
+			<script>
+							function myFunction2() {
+							var pass2 = prompt("Please enter password:");
+								if (pass2 === "banik1"){
+									alert("correct");}
+								else {
+									myFunction2();}
+						}
+					</script>
+					
+					<script>
+						myFunction2()
+						</script>
+	
+		<title>Billinq Test</title>
+		
+		<link rel="stylesheet" href="style.css">
+		
+		<script src="js4.js"></script>
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<meta charset="utf-8" />
+		
+		
+		
+		
+	</head>
+	
+	<body>
+	<script>
+			var age = prompt("Please enter Your full name:");
+			alert("Hello "+age+" !. It is the final countdown!");
+			alert("Rules:\n1. Don't cheat: don't use manuals, notes, team members etc.\n2. After you answer all questions, don't click 'Submit'. Ask Małgorzata to check and she can submit the results\n3. You don't have to click on radio button in order to select answer, You can click on answer text\n4. After Gosia clicks Submit button on top of the web You will see your results\n5. Gosia will take a screen of the results and archived it in our database\n6. Good Luck!!");
+		</script>
+	
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	
+		<div id="container">
+	
+			<header>
+				<h1>Nordics<br>
+Billing & Engagement knowledge test 1<br>
+Internal training purpose only<br><br>
+
+</h1>
+				
+			</header>
+			<section>
+				<div id="results">
+				</div>
+				<form name="billingtest" onsubmit="return submitAnswers()">
+					<h3>1. In which way GSS receives invoice requests? </h3>
+					<label><input type="radio" name="q1" value="a" id="q1a">via GFIS</label><br>
+					<span class="bom"><label><input type="radio" name="q1" value="b" id="q1b">via Gin</label></span><br>
+					<label><input type="radio" name="q1" value="c" id="q1c">via GIS</label><br>
+					<label><input type="radio" name="q1" value="d" id="q1d">via GSS mailbox</label><br>
+			
+					<h3>2. When we have allocation between two engagements and on the main engagement amount is 0, we should:</h3>
+					<span class="bom"><label><input type="radio" name="q2" value="a" id="q2a">reject it</label></span><br>
+					<label><input type="radio" name="q2" value="b" id="q2b">process standard invoice without allocation</label><br>
+					<label><input type="radio" name="q2" value="c" id="q2c">process consolidate divide request’s amount between requested engagement</label><br>
+					<label><input type="radio" name="q2" value="d" id="q2d">invoice with the same amounts as on the request</label><br>
+					
+					<h3>3. When Swedish invoice is send to Swedish company with different currency then we should: </h3>
+					<label><input type="radio" name="q3" value="a" id="q3a">Reject it</label><br>
+					<span class="bom"><label><input type="radio" name="q3" value="b" id="q3b">Include in trailing comment  text: "Countervalue VAT SEK xxxxx at an F/X rate of SEK xxx”</label></span><br>
+					<label><input type="radio" name="q3" value="c" id="q3c">Process it without any additional information</label><br>
+					<label><input type="radio" name="q3" value="d" id="q3d">Change currency to SEK</label><br>
+					
+					<h3>4. Where we should check that VAT number for EU countries is valid or not? </h3>
+					<span class="bom"><label><input type="radio" name="q4" value="a" id="q4a">VIES</label></span><br>
+					<label><input type="radio" name="q4" value="b" id="q4b">Retriver</label><br>
+					<label><input type="radio" name="q4" value="c" id="q4c">GFIS</label><br>
+					<label><input type="radio" name="q4" value="d" id="q4d">Gin</label><br>
+					
+					<h3>5. When and where we can re-open engagement (changing status from closing to open)?</h3>
+					<label><input type="radio" name="q5" value="a" id="q5a">When write-off was done, engagement can be re-opened via GIN</label><br>
+					<span class="bom"><label><input type="radio" name="q5" value="b" id="q5b">When write-off was not done, engagement can be re-opened via GIN</label></span><br>
+					<label><input type="radio" name="q5" value="c" id="q5c">When write-off was done, engagement can be re-opened in GFIS</label><br>
+					<label><input type="radio" name="q5" value="d" id="q5d">When write-off was not done, engagement can be re-opened in GFIS</label><br>
+					
+					<h3>6.  If we receive e-mail to stop send reminders, we should: </h3>
+					<label><input type="radio" name="q6" value="a" id="q6a">Forward it to AR Team</label><br>
+					<label><input type="radio" name="q6" value="b" id="q6b">Forward it to AP Team</label><br>
+					<span class="bom"><label><input type="radio" name="q6" value="c" id="q6c">Forward it to Dunning Team</label></span><br>
+					<label><input type="radio" name="q6" value="d" id="q6d">Forward it to Nordic finance</label><br>
+					
+					<h3>7. If requestor asked for “open the code for interoperable”, what is the first step? </h3>
+					<label><input type="radio" name="q7" value="a" id="q7a">Search in GFIS Core system using the client number</label><br>
+					<label><input type="radio" name="q7" value="b" id="q7b">Search in ARD system using DUNS number</label><br>
+					<span class="bom"><label><input type="radio" name="q7" value="c" id="q7c">Search in GFIS European system using engagement number</label></span><br>
+					<label><input type="radio" name="q7" value="d" id="q7d">Search in PACE system using client name</label><br>
+					
+					<h3>8. Which activity codes  we cannot close on Norwegian engagements:</h3>
+					<label><input type="radio" name="q8" value="a" id="q8a">Only General</label><br>
+					<label><input type="radio" name="q8" value="b" id="q8b">We can close all activity codes is we are asked for that</label><br>
+					<span class="bom"><label><input type="radio" name="q8" value="c" id="q8c">General, NO090,NO091, NO092,NO093</label></span><br>
+					<label><input type="radio" name="q8" value="d" id="q8d">NO090,NO091, NO092,NO093</label><br>
+					
+					<h3>9. In which external database will you search for a Danish VAT number?</h3>
+					<label><input type="radio" name="q9" value="a" id="q9a">Retriever</label><br>
+					<label><input type="radio" name="q9" value="b" id="q9b">Proff Forvalt</label><br>
+					<span class="bom"><label><input type="radio" name="q9" value="c" id="q9c">CVR</label></span><br>
+					<label><input type="radio" name="q9" value="d" id="q9d">PACE</label><br>
+					
+					<h3>10. Which VAT type should be used when invoice is to Greenland.</h3>
+					<label><input type="radio" name="q10" value="a" id="q10a">DK 0% - DK no VAT</label><br>
+					<label><input type="radio" name="q10" value="b" id="q10b">DK 25% - DK Standard at 25%</label><br>
+					<label><input type="radio" name="q10" value="c" id="q10c">EU 0 – DK Export EU</label><br>
+					<span class="bom"><label><input type="radio" name="q10" value="d" id="q10d">OEU 0 – DK Export outside EU</label></span><br>
+					
+					<h3>11. If address to be added exists in the GFIS system and looks like this (see below), how should you proceed?</h3>
+					<img src="1.png"><br>
+					<label><input type="radio" name="q11" value="a" id="q11a">Send a ticket to IT service via ServiceNow to activate the address.</label><br>
+					<label><input type="radio" name="q11" value="b" id="q11b">Tick “Bill To”, “Ship To”, “Sold To” and press save.</label><br>
+					<span class="bom"><label><input type="radio" name="q11" value="c" id="q11c">Click “+” on the right side of the window and add again this address. </label><br></span>
+					<label><input type="radio" name="q11" value="d" id="q11d">Send an e-mail to requestor or the person who started the flow and ask for a new correct address.</label><br>
+					
+					<h3>12. What location is used on Norwegian invoices?</h3>
+					<span class="bom"><label><input type="radio" name="q12" value="a" id="q12a">Oslo</label></span><br>
+					<label><input type="radio" name="q12" value="b" id="q12b">Tromsø</label><br>
+					<label><input type="radio" name="q12" value="c" id="q12c">Stavanger</label><br>
+					<label><input type="radio" name="q12" value="d" id="q12d">Otta</label><br>
+					
+					<h3>13. Payment terms required for Swedish GSG invoices are as follows:</h3>
+					<label><input type="radio" name="q13" value="a" id="q13a">45 days</label><br>
+					<label><input type="radio" name="q13" value="b" id="q13b">According to the request</label><br>
+					<span class="bom"><label><input type="radio" name="q13" value="c" id="q13c">30 days</label></span><br>
+					<label><input type="radio" name="q13" value="d" id="q13d">60 days</label><br>
+					
+					<h3>14. What can you tell about this client from the information find in Client Lookup Tool?</h3>
+					<img src="2.png"><br>
+					<span class="bom"><label><input type="radio" name="q14" value="a" id="q14a">Leki Aviation A/S is a Danish audit client.</label></span><br>
+					<label><input type="radio" name="q14" value="b" id="q14b">The “daughter” company of Leki Aviation A/S is Kim Krøjby Holding ApS.</label><br>
+					<label><input type="radio" name="q14" value="c" id="q14c">Kim Krøjby Holding ApS is an active client.</label><br>
+					<label><input type="radio" name="q14" value="d" id="q14d">Kim Krøjby Holding ApS is a Danish non audit client.</label><br>
+					
+					<h3>15. What information is mandatory when You need to send ticket for client reactivation.</h3>
+					<span class="bom"><label><input type="radio" name="q15" value="a" id="q15a">GFIS ID & PACE folder number</label></span><br>
+					<label><input type="radio" name="q15" value="b" id="q15b">PACE folder number & who’s requested this change</label><br>
+					<label><input type="radio" name="q15" value="c" id="q15c">CEREAS flow number & GFIS ID</label><br>
+					<label><input type="radio" name="q15" value="d" id="q15d">GFIS ID & reason for reactivation</label><br>
+					
+					<h3>16. What changes is priority when we should change BU and currency on Norwegian invoices?</h3>
+					<span class="bom"><label><input type="radio" name="q16" value="a" id="q16a">Currency</label></span><br>
+					<label><input type="radio" name="q16" value="b" id="q16b">BU</label><br>
+
+					
+					<h3>17. How should we handled error in CEREAS “Client name already exist”?</h3>
+					<span class="bom"><label><input type="radio" name="q17" value="a" id="q17a">Check if such client exist in our database and confirm with requestor that is the same client or not</label></span><br>
+					<label><input type="radio" name="q17" value="b" id="q17b">Set up client as requested </label><br>
+					<label><input type="radio" name="q17" value="c" id="q17c">Sent ticket via “service-now” portal to set up client</label><br>
+
+					
+					<h3>18. If in CEREAS Blocking is flow for adding CCP role which number you use to put it in GFIS system?</h3>
+					<img src="3.png"><br>
+					<span class="bom"><label><input type="radio" name="q18" value="a" id="q18a">GFIS ID</label></span><br>
+					<label><input type="radio" name="q18" value="b" id="q18b">DUNS No</label><br>
+					<label><input type="radio" name="q18" value="c" id="q18c">Engagement No</label><br>
+					<label><input type="radio" name="q18" value="d" id="q18d">GPN No</label><br>
+					
+					<h3>19. Who is the contact person in case of Finnish invoices processing? </h3>
+					
+					<label><input type="radio" name="q19" value="a" id="q19a">Mikko Järventausta</label><br>
+					<label><input type="radio" name="q19" value="b" id="q19b">Jari Havukainen</label><br>
+					<label><input type="radio" name="q19" value="c" id="q19c">Mikko Äijälä</label><br>
+					<span class="bom"><label><input type="radio" name="q19" value="d" id="q19d">Raija Österholm</label></span><br>
+					
+					
+					<h3>20. Please mark if the information about Bill To client is TRUE or FALSE.</h3>
+					<h4>a) We only use Bill To client option when the customer is the daughter of the main client.</h4>
+					<label><input type="radio" name="q20" value="a" id="q20a">TRUE</label><br>
+					<span class="bom"><label><input type="radio" name="q20" value="b" id="q20b">FALSE</label></span><br>
+					<h4>b) The address of the Bill To client is always the same as of the main client.</h4>
+					<label><input type="radio" name="q21" value="a" id="q21a">TRUE</label><br>
+					<span class="bom"><label><input type="radio" name="q21" value="b" id="q21b">FALSE</label></span><br>
+					<h3>21. What is the Finnish word for expenses:</h3>
+					<input id = "textbox" type = "text" name ="q22">
+					<br><br>
+					
+					<input onclick="myFunction(); color()" type="submit" value="Submit">
+						<script>
+							function myFunction() {
+							var pass = prompt("Please enter password:");
+								if (pass === "banik1"){
+									alert("correct");}
+								else {
+									myFunction();
+									
+									}
+							
+								
+							}
+						</script>
+				</form>
+				
+				<script>
+				function color() {
+				var all = document.getElementsByClassName('bom');
+				for (var i = 0; i < all.length; i++) {
+				all[i].style.color = 'green';
+				all[i].style.fontWeight = 'bold';
+					}
+				}
+				</script>
+			</section>
+			
+			<span class="scrollTopButton"></span>
+			<footer>
+				<p> Copyriqht &copy; Bartosz Banik 2018. All Riqhts Reserved</p>
+			</footer>
+	
+	
+	</div>
+	
+	
+	
+	</body>
+	
+
+	
+</html>
